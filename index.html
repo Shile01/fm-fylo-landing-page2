@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" alt="Fylo Logo" />
+        </a>
+        <nav class="navigation">
+          <ul class="navs">
+            <li class="nav"><a href="#" class="nav__link">Features</a></li>
+            <li class="nav"><a href="#" class="nav__link">Team</a></li>
+            <li class="nav"><a href="#" class="nav__link">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="container">
+        <div class="hero__image">
+          <img src="./assets/images/illustration-1.svg" alt="Hero Image" />
+        </div>
+        <div class="hero-">
+          <h1 class="hero__main">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="hero__copy">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form class="hero__form">
+            <div class="mails">
+              <input
+                type="email email1"
+                name=""
+                id="email1"
+                required
+                placeholder="Enter your email..."
+              />
+              <p class="err err-mobile" id="err-mobile1"></p>
+            </div>
+            <button type="submit" class="cta cta-main" onclick="showError()">
+              Get Started
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <section class="product-info">
+      <div class="container">
+        <div class="ill">
+          <img
+            src="./assets/images/illustration-2.svg"
+            alt="Illustration 2"
+            srcset=""
+          />
+        </div>
+        <div class="product-right">
+          <div class="product__content">
+            <h3 class="product__content__header">
+              Stay productive, wherever you are
+            </h3>
+            <div class="product__content__copy">
+              <p>
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all of your file storage needs.
+              </p>
+              <p>
+                Securely share files and folders with friends, family and
+                colleagues for live collaboration. No email attachments
+                required!
+              </p>
+            </div>
+          </div>
+          <div class="check-more">
+            <a href="">
+              <span>See how Fylo works</span>
+              <span
+                ><img
+                  src="./assets/images/icon-arrow.svg"
+                  alt="arrow icon"
+                  srcset=""
+              /></span>
+            </a>
+          </div>
+          <div class="testimony">
+            <div class="bq">
+              <img src="./assets/images/icon-quotes.svg" alt="quotes icon" />
+            </div>
+            <div class="quote">
+              <p>
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine
+              </p>
+            </div>
+            <div class="customer-profile">
+              <div class="customer-image">
+                <img
+                  src="./assets/images/avatar-testimonial.jpg"
+                  alt="Kylie Burton image"
+                  srcset=""
+                />
+              </div>
+              <div class="customer-details">
+                <h5 class="customer__name">Kyle Burton</h5>
+                <p class="customer__status">Founder and CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="access">
+      <div class="container">
+        <div class="acc-right">
+          <h3 class="access-header">Get early access today</h3>
+          <p class="access-content">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form class="sec-form">
+          <div class="mails">
+            <input
+              type="email email2"
+              name=""
+              id="email2"
+              required
+              placeholder="email@example.com"
+            />
+            <p class="err err-mobile" id="err-mobile2">show errror</p>
+          </div>
+          <button
+            type="submit"
+            class="cta cta-secondary"
+            onclick="showError2()"
+          >
+            Get Started For Free
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!--  footer  -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#" class="log">
+          <img src="assets/images/logo-footer.svg" alt="Fylo Logo" />
+        </a>
+        <div class="contact">
+          <div class="phone-mail">
+            <div class="phone">
+              <div class="ph-img">
+                <img src="./assets/images/icon-phone.svg" alt="Phone icon" />
+              </div>
+              <div class="ph">
+                <p>Phone:+1-543-123-4567</p>
+              </div>
+            </div>
+            <div class="mail">
+              <div class="mail-img">
+                <img src="./assets/images/icon-email.svg" alt="Mail icon" />
+              </div>
+              <div class="ma">
+                <p>example@fylo.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pages1">
+            <ul class="pages">
+              <li class="page">
+                <a href="" class="page__link">About Us</a>
+              </li>
+              <li class="page"><a href="" class="page__link">Jobs</a></li>
+              <li class="page"><a href="" class="page__link">Press</a></li>
+              <li class="page"><a href="" class="page__link">Blog</a></li>
+            </ul>
+          </div>
+          <div class="pages2">
+            <ul class="pages">
+              <li class="page">
+                <a href="" class="page__link">Contact Us</a>
+              </li>
+              <li class="page"><a href="" class="page__link">Terms</a></li>
+              <li class="page">
+                <a href="" class="page__link">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <ul class="socials">
+              <li class="social social1">
+                <a href="" class="social__link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="social social2">
+                <a href="" class="social__link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="social social3">
+                <a href="" class="social__link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://github.com/Shiley01">Shiley</a>.
+        </p>
+      </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
