@@ -507,6 +507,8 @@ input::placeholder {
 
   .product-info {
     margin-top: 188px;
+    padding-top: 80px;
+    padding-bottom: 164px;
   }
 
   .hero__image {
@@ -523,6 +525,15 @@ input::placeholder {
 
   .hero__copy {
     font-size: 20px;
+  }
+
+  .access {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .footer {
+    padding-top: 88px;
   }
 
   .cta {
