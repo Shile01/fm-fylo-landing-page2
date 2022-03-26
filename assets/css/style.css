@@ -456,7 +456,11 @@ input::placeholder {
 
 @media (min-width: 800px) {
   .header .container {
-    grid-template-columns: 166px auto;
+    grid-template-columns: 192px auto;
+  }
+
+  .logo {
+    height: 40px;
   }
 
   .product-info::before {
@@ -477,6 +481,10 @@ input::placeholder {
     grid-template-rows: 1fr;
     align-items: center;
     gap: 2.5rem;
+  }
+
+  .header {
+    padding-top: 52px;
   }
 
   .err-mobile {
